@@ -29,9 +29,9 @@ const downAction = { type: 'DOWN' }
 console.log("store", store)
 
 up.addEventListener('click', function () {
-    counter.innerText++
+    store.dispatch(upAction)
 })
 
 down.addEventListener('click', function () {
-    counter.innerText--
+    store.dispatch(downAction)
 })
